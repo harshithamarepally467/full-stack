@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Women's Wear</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    .products, .cart {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 220px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .card button {
+      margin-top: 10px;
+      background: #008cba;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .card button:hover {
+      background: #005f73;
+    }
+
+    .cart-item {
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+      width: 220px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Women's Wear</h1>
+
+  <div class="products" id="productList">
+    <!-- Product 1 -->
+    <div class="card">
+      <img src="https://img.tatacliq.com/images/i12/437Wx649H/MP000000018755699_437Wx649H_202308160405381.jpeg" alt="Kurta 1">
+      <h4>AVAASA MIX N' MATCH</h4>
+      <p>₹1,064 <del>₹1,499</del> <span style="color:green;">(29% off)</span></p>
+      <button onclick="addToCart('AVAASA MIX N\' MATCH', 1064)">Add to Cart</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="card">
+      <img src="https://i.etsystatic.com/42633006/r/il/558e3b/5970304130/il_570xN.5970304130_mm0t.jpg" alt="Kurta 2">
+      <h4>AVAASA MIX N' MATCH</h4>
+      <p>₹1,419 <del>₹1,999</del> <span style="color:green;">(29% off)</span></p>
+      <button onclick="addToCart('AVAASA MIX N\' MATCH', 1419)">Add to Cart</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="card">
+      <img src="https://cdn.rajwadi.com/image/cache/data-2024/mustard-yellow-printed-cotton-silk-kurti-set-59327-800x1100.jpg" alt="Kurta 3">
+      <h4>MIALO FASHION X AG</h4>
+      <p>₹350 <del>₹999</del> <span style="color:green;">(65% off)</span></p>
+      <button onclick="addToCart('MIALO FASHION X AG', 350)">Add to Cart</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB5EslMk5Q86eQxJS0ZpzuQGiCfSNvDj_Sag&s" alt="Kurta 4">
+      <h4>MIALO FASHION X AG</h4>
+      <p>₹350 <del>₹999</del> <span style="color:green;">(65% off)</span></p>
+      <button onclick="addToCart('MIALO FASHION X AG', 350)">Add to Cart</button>
+    </div>
+  </div>
+
+  <h2>🛒 Your Cart</h2>
+  <div class="cart" id="cartList"></div>
+
+  <script>
+    const cartList = document.getElementById('cartList');
+
+    function addToCart(name, price) {
+      const item = document.createElement('div');
+      item.className = 'cart-item';
+      item.innerHTML = `<h4>${name}</h4><p>₹${price}</p>`;
+      cartList.appendChild(item);
+    }
+  </script>
+
+</body>
+</html>
