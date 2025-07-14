@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Harshitha Portfolio</title>
+<style>
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff7f0;
+    color: #5a3e1b;
+    line-height: 1.6;
+    padding: 30px 15px;
+  }
+
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #fff1e6;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(90, 62, 27, 0.15);
+    padding: 40px 50px 60px;
+    text-align: center;
+  }
+
+  header {
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  header h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    color: #d35400; /* burnt orange */
+    margin-bottom: 15px;
+  }
+
+  .profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #d35400;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 12px rgba(211, 84, 0, 0.3);
+  }
+
+  header p.subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #9c6b3a;
+    margin-bottom: 25px;
+  }
+
+  section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d35400;
+    border-bottom: 3px solid #d35400;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+  }
+
+  section p, ul {
+    font-size: 1.05rem;
+    color: #5a3e1b;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    list-style: square inside;
+  }
+
+  .skills-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .skills-list li {
+    background-color: #d35400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 3px 8px rgba(211, 84, 0, 0.5);
+    transition: background-color 0.3s ease;
+    cursor: default;
+  }
+
+  .skills-list li:hover {
+    background-color: #a03d00;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #9c6b3a;
+    text-align: center;
+    border-top: 1px solid #d8bfa8;
+    padding-top: 15px;
+  }
+  @media (max-width: 600px) {
+    .container {
+      padding: 30px 20px 40px;
+    }
+    header h1 {
+      font-size: 2.4rem;
+    }
+    header p.subtitle {
+      font-size: 1.1rem;
+    }
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 15px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Marepally Harshitha</h1>
+      <img src="h.jpg" alt="Harshitha Marepally" class="profile-img" />
+      <p class="subtitle">Computer Science Student</p>
+    </header>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I am a motivated Computer Science student specializing in  Data Science. I have a passion for building machine learning models and developing data-driven solutions. When not coding, I enjoy exploring new AI research and participating in hackathons.
+      </p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Btech Computer Science (Ds Specialization)</strong> – Mrcet (2025 - Present)</li>
+        <li><strong>Narayana junior college</strong> – MPC(2021 - 2023)</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        
+        <li>Python</li>
+        <li>html,css</li>
+        <li>React</li>
+        <li>js</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Ajio clone.</strong></li>
+        <li><strong>Placement portal management system.</strong></li>
+        <li><strong>Hospital Management System.</strong></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Contact:harshithamarepally@gmail.com</p>
+      <p>&copy; 2025 Harshitha Marepally</p>
+    </footer>
+  </div>
+
+</body>
+</html>
